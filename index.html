@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería Industrial - Ejercicios Resueltos</title>
+    <!-- CSS Estilos -->
+    <style>
+        :root {
+            --primary: #1F497D;
+            --secondary: #008080;
+            --bg: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin-top: 0.5rem; opacity: 0.9; }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+        }
+        .tag {
+            background-color: #E2EFDA;
+            color: #375623;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #E0E0E0;
+            margin-top: 3rem;
+        }
+    </style>
+    <!-- MathJax para fórmulas LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Portal de Ingeniería Industrial</h1>
+        <p>Problemas Resueltos y Casos Prácticos para Universitarios</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Ejercicio 1 -->
+        <div class="card">
+            <span class="tag">Gestión de la Producción</span>
+            <h2>Cálculo de OEE y Brecha de Efectividad</h2>
+            <p><strong>Enunciado:</strong> Una inyectora opera con Disponibilidad \(TC = 97.72\%\), Rendimiento \(TR = 87.85\%\) y Calidad \(TD = 85.78\%\). Calcule el OEE Real y la diferencia si la Meta es de \(65\%\).</p>
+            <hr>
+            <h3>Solución:</h3>
+            <p>Aplicamos la fórmula del OEE:</p>
+            <p>$$OEE = TC \times TR \times TD$$</p>
+            <p>$$OEE = 0.9772 \times 0.8785 \times 0.8578 = 0.7364 \rightarrow 73.64\%$$</p>
+            <p><strong>Diferencia vs Meta:</strong> \(73.64\% - 65.00\% = +8.64\%\) (La máquina supera la meta).</p>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="card">
+            <span class="tag">Ingeniería Económica</span>
+            <h2>Evaluación Financiera de Proyectos (VAN)</h2>
+            <p><strong>Enunciado:</strong> Calcule el Valor Actual Neto (VAN) para una inversión inicial \(I_0 = \$10,000\) con flujos de caja esperados de \$4,000 por 3 años a una tasa de descuento \(k = 10\%\).</p>
+            <hr>
+            <h3>Solución:</h3>
+            <p>Fórmula del VAN:</p>
+            <p>$$VAN = \sum_{t=1}^{n} \frac{F_t}{(1+k)^t} - I_0$$</p>
+            <p>$$VAN = \frac{4000}{(1.10)^1} + \frac{4000}{(1.10)^2} + \frac{4000}{(1.10)^3} - 10000 = \$F_t - I_0$$</p>
+            <p>$$VAN = 3636.36 + 3305.78 + 3005.26 - 10000 = -\$52.60$$</p>
+            <p><strong>Resultado:</strong> El proyecto no es rentable a esa tasa de descuento.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portal de Ingeniería Industrial | Plataforma Académica Gratuita</p>
+    </footer>
+
+</body>
+</html>
